@@ -3,7 +3,7 @@ import flet as ft
 def main(page: ft.Page):
     page.title = "Counter 🧮"
     
-    input_number = ft.TextField(label="Number", value=0)
+    input_number = ft.TextField(label="Number", value=0, width=100)
     
     def add(e):
         input_number.value = str(int(input_number.value) + 1) 
